@@ -6,13 +6,17 @@
   Storybook with ReactJS TypeScript
 </h3>
 
-<img src="https://i.ibb.co/CV2wxGV/Screenshot-2021-10-17-at-21-17-56.png" alt="Screenshot-2021-10-17-at-21-17-56" />
+<div align="center">
+    <img src="https://i.ibb.co/CV2wxGV/Screenshot-2021-10-17-at-21-17-56.png" alt="Screenshot-2021-10-17-at-21-17-56" />
+</div>
 
 ## About
 
 This repository is a simple todo list application built using ReactJS, TypeScript and Storybook.
 
-<img src="https://i.ibb.co/HV52zsr/todo-list.png" alt="todo-list"  />
+<div align="center">
+    <img src="https://i.ibb.co/HV52zsr/todo-list.png" alt="todo-list"  />
+</div>
 
 # Scripts
 
