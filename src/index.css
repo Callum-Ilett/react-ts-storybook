@@ -1,13 +1,117 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+html {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #020631;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+h1 {
+  font-size: 21px;
+}
+
+.success {
+  color: #28a745;
+}
+
+.danger {
+  color: #dc3545;
+}
+
+.primary {
+  color: #007bff;
+}
+
+.create-task {
+  display: flex;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.create-task input {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: inherit;
+  padding-left: 8px;
+}
+
+.create-task button {
+  cursor: pointer;
+  border-radius: inherit;
+  width: 32px;
+  height: 32px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #666666;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pb-1 {
+  padding-bottom: 8px;
+}
+
+.task-form,
+.task-list {
+  width: 300px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .task-form,
+  .task-list {
+    width: 350px;
+  }
+}
+
+.task-list {
+  padding: 0px;
 }

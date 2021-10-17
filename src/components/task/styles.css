@@ -1,0 +1,82 @@
+.task {
+  border-radius: 4px;
+  margin-bottom: 7px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.task .checkbox-wrapper {
+  display: flex;
+  flex: 1;
+  border-radius: inherit;
+}
+
+.task .checkbox-wrapper input[type="checkbox"] {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+}
+
+.task label {
+  margin-left: 8px;
+  flex: 1;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+}
+
+.task button {
+  height: 32px;
+  width: 32px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 24px;
+  border-radius: inherit;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Active Task */
+
+.task.active {
+  background: #fff;
+}
+
+.task.active .checkbox {
+  color: #007bff;
+}
+
+.task.active label {
+  color: #333333;
+}
+
+.task.active button:hover {
+  background-color: #f3f3f3;
+  border-radius: inherit;
+}
+
+/* Completed Task */
+
+.task.complete {
+  background-color: #5529dc;
+  color: white;
+}
+
+.task.complete .checkbox {
+  color: white;
+}
+
+.task.complete label {
+  color: white;
+  text-decoration: line-through;
+}
+
+.task.complete .danger {
+  color: #cccccc;
+}
