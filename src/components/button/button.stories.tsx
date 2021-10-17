@@ -13,11 +13,11 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 export const Small = Template.bind({});
 Small.args = {
   size: "small",
-  label: "Small Button",
+  children: "Small Button",
 };
 
 export const Medium = Template.bind({});
 Medium.args = {
   size: "medium",
-  label: "Medium Button",
+  children: "Medium Button",
 };

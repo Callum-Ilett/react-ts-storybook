@@ -1,6 +1,7 @@
+import { FC } from "react";
 import "./styles.css";
 
-interface ButtonProps {
+interface Props {
   /**
    * Is this the principal call to action on the page?
    */
@@ -14,10 +15,6 @@ interface ButtonProps {
    */
   size?: "small" | "medium" | "large";
   /**
-   * Button contents
-   */
-  label: string;
-  /**
    * Optional click handler
    */
   onClick?: () => void;
@@ -26,13 +23,13 @@ interface ButtonProps {
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({
+export const Button: FC<Props> = ({
   primary = false,
   size = "medium",
   backgroundColor,
-  label,
+  children,
   ...props
-}: ButtonProps) => {
+}) => {
   const mode = primary
     ? "storybook-button--primary"
     : "storybook-button--secondary";
@@ -45,7 +42,7 @@ export const Button = ({
       style={{ backgroundColor }}
       {...props}
     >
-      {label}
+      {children}
     </button>
   );
 };
